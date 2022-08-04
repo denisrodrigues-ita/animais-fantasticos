@@ -12,8 +12,7 @@ export default function initMenuMobile() {
             outsideClick($menuList, eventos, () => {
                 $menuButton.classList.remove('active');
                 $menuList.classList.remove('active');
-            })
-
+            });
         }
 
         eventos.forEach(evento => $menuButton.addEventListener(evento, openMenu));
